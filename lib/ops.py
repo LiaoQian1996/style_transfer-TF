@@ -6,7 +6,12 @@ from __future__ import print_function
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 import pdb
-    
+
+def gram(features):
+    features = tf.reshape(features,[-1,features.shape[3]])
+    return tf.matmul(features,features,transpose_a=True)\
+                 / tf.cast(features.shape[0]*features.shape[1],dtype=tf.float32)
+
 def total_variation_loss(image):
     tv_y_size = tf.size(image[:,1:,:,:],out_type=tf.float32)
     tv_x_size = tf.size(image[:,:,1:,:],out_type=tf.float32)
@@ -36,7 +41,7 @@ def get_layer_scope(type):
         raise NotImplementedError('Unknown layer name')
     return target_layer
 
-def get_style_layer_list(layer,single_layer=False):
+def get_layer_list(layer, single_layer=False):
     style_layers = []
     if single_layer == True:
         if layer == 'VGG11':
