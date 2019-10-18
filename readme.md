@@ -25,7 +25,7 @@ The former presents an texture synthesis algorithm by modeling the statistics fe
 
 <table>
 	<tr>
-        <center> Content Image   Tubingen </center>
+        <center> Content Image   XJTU </center>
         <center><img src="./imgs/xjtu.png" width="600px"></center>
     </tr>
 	</br>
