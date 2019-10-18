@@ -46,7 +46,6 @@ def generator(FLAGS, target, init=None, content=None,reuse=False, training=True)
                       initializer = tf.random_normal_initializer(0,0.5),
                                    dtype=tf.float32,trainable=True, collections=None)   
         elif FLAGS.task_mode == 'style_transfer':
-            print("test point!")
             shape = [1,content.shape[1],content.shape[2],3]
             var = tf.get_variable('gen_img',shape=shape, \
                      initializer = tf.truncated_normal_initializer(0,0.2),\

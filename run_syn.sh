@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python main.py \
+python main.py \
     --task_mode texture_synthesis \
     --texture_shape -1 -1 \
     --output_dir ./results/ \

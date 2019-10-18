@@ -243,7 +243,7 @@ with tf.Session(config = config) as sess:
     else:
         print("Output image size :       %d   %d" %(gen_output.shape[0], gen_output.shape[1]))
     print("Total synthesizing time : %.1f sec" % total_time)
-    print('Optimization done !!! ')        
+    print('Optimization done ! ')        
 
     
     

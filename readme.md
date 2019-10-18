@@ -26,7 +26,7 @@ The former presents an texture synthesis algorithm by modeling the statistics fe
 <table>
 	<tr>
         <center> Content Image   Tubingen </center>
-        <center><img src="./imgs/tubingen.png" width="600px"></center>
+        <center><img src="./imgs/xjtu.png" width="600px"></center>
     </tr>
 	</br>
     <tr>
@@ -36,7 +36,7 @@ The former presents an texture synthesis algorithm by modeling the statistics fe
     </br>
     <tr>
         <center> Stylized Image </center>
-    	<center><img src="./results/VGG54_3.2616e-05_6.2145e+01_39.1_starry-night_tubingen.png" width="600px"><center>
+    	<center><img src="./results/VGG54_2.7554e-05_9.0255e+01_38.9_starry-night_xjtu.png" width="600px"><center>
     </tr>
 </table>
 
